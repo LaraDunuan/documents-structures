@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <?xml-model href="exemple-basique.rng" type="application/xml"
             schematypens="http://relaxng.org/ns/structure/1.0"?>
+=======
+
+<?xml-model href="exemple-basique.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+>>>>>>> upstream/master
 <book>
     <page>This is page one.</page>
     <page>This is page two.</page>
