@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="factbook-minimal.rng" type="application/xml" 
+            schematypens="http://relaxng.org/ns/structure/1.0"?>
+<mondial>
+    <continent id="Continent1" name="Asie"/>
+    <continent id="Continent2" name="Europe"/>
+    <country id="Country1" name="Japon" gdp_total="5082" gdp_agri="45">
+        <name>"Japon"</name>
+        <city longitude="139.691706" latitude="35.689487">
+            <name>"Tokyo"</name>
+            <population xmlns="inalco:documents-structures:ns">13953972 </population>
+            <located_at/>
+        </city>
+        <city longitude="135.768029" latitude="35.011636">
+            <name>"Kyoto"</name>
+            <population xmlns="inalco:documents-structures:ns">1475000</population>
+        </city>
+    </country>
+    <country id="Country2" name="France" gdp_total="2715" gdp_agri="9">
+        <name>"France"</name>
+        <city longitude="2.3522219" latitude="48.856614">
+            <name>"Paris"</name>
+            <population xmlns="inalco:documents-structures:ns">2211297</population>
+            <located_at/>
+        </city>
+            
+        <city longitude="-0.57918" latitude="44.837789">
+            <name>"Bordeaux"</name>
+            <population xmlns="inalco:documents-structures:ns">254436</population>
+        </city>
+    </country>
+
+</mondial>
