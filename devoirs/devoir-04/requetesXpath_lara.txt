@@ -1,0 +1,38 @@
+-----------------
+X-Path 1 Partie 2
+-----------------
+1. /pdv_liste
+2. /pdv_liste/pdv/child::*
+3. /pdv_liste/pdv/ville/data()
+4. /pdv_liste/pdv[46]
+5. /pdv_liste/pdv/prix[last()]
+6. /pdv_liste/pdv[@id=3150005]
+7. /pdv_liste/pdv[services[not(service='GPL')]]
+8. following-sibling::*
+9. /pdv_liste/pdv[@cp=16170]/ville
+10. /pdv_liste/pdv[ouverture[contains(@saufjour,'Lundi')]]
+11. /pdv_liste/pdv[services[service='Relais colis']]
+12. //*[following::*[position()=10 and data() ="Piste poids lourds"]]
+13. /pdv_liste/pdv/ville[following-sibling::rupture[@nom="SP95" and contains(@début, "2013-02-04")]]
+14. /pdv_liste/pdv[not(fermeture/@type="T")]
+15. /pdv_liste/pdv/ville['La Mure'] and /pdv_liste/pdv/prix[@nom="E10"]
+16. count(/pdv_liste/pdv)
+17. /pdv_liste/pdv/adresse/string-length()
+18. max(/pdv_liste/pdv/adresse/string-length())
+19. /pdv_liste/pdv[ouverture/not(@fin="20:00")]
+20. /pdv_liste/pdv/prix/@nom/lower-case(data())
+21. /pdv_liste/pdv/@latitude/replace(data(),"\.", "--")
+22. /pdv_liste/pdv/prix/@maj/concat(substring(data(), 12, 8), "T", substring(data(), 0, 11))
+
+-----------------
+X-Path 2
+-----------------
+1. (/juicers/juicer[@type="centrifugal"])
+2. (/juicers/juicer[@type="centrifugal"])[2]
+3. (/juicers/juicer[@type="centrifugal"])[position()<2]
+4. (/juicers/juicer/name/string())
+5. /juicers/juicer/name[data()='Juiceman Jr.']
+6. (//name)
+7. #5
+8. (5 to 25)
+9. (5 to 25)[. mod 5 eq 0]
